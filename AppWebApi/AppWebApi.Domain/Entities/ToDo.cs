@@ -15,8 +15,16 @@ namespace AppWebApi.Domain.Entities
         private bool _isDone;
         private DateTime _createDate;
 
-        public ToDo(string id, string? title, string description, string? author, bool isDone, DateTime createDate)
-            : base(id)
+        public ToDo(): this(
+            Guid.NewGuid().ToString(),
+            default,
+            string.Empty,
+            default,
+            false,
+            DateTime.UtcNow) { }
+
+        public ToDo(string? id, string? title, string description, string? author, bool isDone, DateTime createDate):
+            base(id)
         {
             Title = title;
             Description = description;

@@ -1,0 +1,12 @@
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\AppWebApi.Core.Agnostic.csproj.AssemblyReference.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\AppWebApi.Core.Agnostic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\AppWebApi.Core.Agnostic.AssemblyInfoInputs.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\AppWebApi.Core.Agnostic.AssemblyInfo.cs
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\AppWebApi.Core.Agnostic.csproj.CoreCompileInputs.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Debug\net6.0\AppWebApi.Core.Agnostic.deps.json
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Debug\net6.0\AppWebApi.Core.Agnostic.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Debug\net6.0\AppWebApi.Core.Agnostic.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\AppWebApi.Core.Agnostic.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\refint\AppWebApi.Core.Agnostic.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\AppWebApi.Core.Agnostic.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\obj\Debug\net6.0\ref\AppWebApi.Core.Agnostic.dll

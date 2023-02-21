@@ -11,7 +11,7 @@ namespace AppWebApi.Core.Agnostic.Mongo
     {
         protected _MongoDbClassMap()
         {
-            if (!BsonClassMap.IsClassMapRegistered(typeof(T))
+            if (!BsonClassMap.IsClassMapRegistered(typeof(T)))
                 BsonClassMap.RegisterClassMap<T>(Map);
         }
 

@@ -16,32 +16,29 @@ namespace AppWebApi.Infrastructure.Data.Repository
             this._collection = context.collection;
         }
 
-        public Task Create(TEntity body)
+        public async Task Create(TEntity body)
         {
-            this._collection.InsertOneAsync(body);
-            return Task.CompletedTask;
+            await this._collection.InsertOneAsync(body);
         }
 
-        public Task Delete(TKey key)
+        public async Task Delete(TKey key)
         {
-            this._collection.FindOneAndDeleteAsync(x => x.Id == key);
-            return Task.FromResult(true);
+            await this._collection.FindOneAndDeleteAsync(x => x.Id == key);
         }
 
-        public Task<TEntity> Find(TKey key)
+        public async Task<TEntity> Find(TKey key)
         {
-            return this._collection.Find(x => x.Id == key).FirstOrDefaultAsync();
+            return await this._collection.Find(x => x.Id == key).FirstOrDefaultAsync();
         }
 
-        public Task<List<TEntity>> FindAll()
+        public async Task<List<TEntity>> FindAll()
         {
-            return this._collection.Find(_ => true).ToListAsync();
+            return await this._collection.Find(_ => true).ToListAsync();
         }
 
-        public Task Update(TKey key, TEntity body)
+        public async Task Update(TKey key, TEntity body)
         {
-            this._collection.FindOneAndReplaceAsync(x => x.Id == key, body);
-            return Task.CompletedTask;
+            await this._collection.FindOneAndReplaceAsync(x => x.Id == key, body);
         }
     }
 }

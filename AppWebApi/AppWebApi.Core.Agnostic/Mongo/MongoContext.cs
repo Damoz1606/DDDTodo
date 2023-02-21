@@ -36,6 +36,4 @@ namespace AppWebApi.Core.Agnostic.Mongo
             throw new NotImplementedException();
         }
     }
-
-    }
 }

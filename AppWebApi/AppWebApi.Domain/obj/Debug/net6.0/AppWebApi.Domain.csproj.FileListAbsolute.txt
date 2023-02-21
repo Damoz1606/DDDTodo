@@ -1,0 +1,12 @@
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\bin\Debug\net6.0\AppWebApi.Domain.deps.json
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\bin\Debug\net6.0\AppWebApi.Domain.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\bin\Debug\net6.0\AppWebApi.Domain.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\AppWebApi.Domain.csproj.AssemblyReference.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\AppWebApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\AppWebApi.Domain.AssemblyInfoInputs.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\AppWebApi.Domain.AssemblyInfo.cs
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\AppWebApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\AppWebApi.Domain.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\refint\AppWebApi.Domain.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\AppWebApi.Domain.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\obj\Debug\net6.0\ref\AppWebApi.Domain.dll

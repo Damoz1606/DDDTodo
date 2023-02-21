@@ -1,0 +1,17 @@
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\bin\Debug\net6.0\AppWebApi.Infrastructure.deps.json
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\bin\Debug\net6.0\AppWebApi.Infrastructure.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\bin\Debug\net6.0\AppWebApi.Infrastructure.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\bin\Debug\net6.0\AppWebApi.Core.Agnostic.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\bin\Debug\net6.0\AppWebApi.Domain.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\bin\Debug\net6.0\AppWebApi.Core.Agnostic.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\bin\Debug\net6.0\AppWebApi.Domain.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.AssemblyInfo.cs
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.csproj.CopyComplete
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\refint\AppWebApi.Infrastructure.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\AppWebApi.Infrastructure.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Infrastructure\obj\Debug\net6.0\ref\AppWebApi.Infrastructure.dll
