@@ -1,0 +1,20 @@
+<mat-form-field
+  appearance="outline"
+  [ngStyle]="{ margin: '1rem', width: '100%' }"
+>
+  <mat-label *ngIf="!!label">{{ label }}</mat-label>
+  <input
+    [ngStyle]="{
+      width: fullWidth ? '100%' : 'auto'
+    }"
+    matInput
+    [placeholder]="placeholder || ''"
+    [value]="value"
+    [required]="!!required"
+    [type]="type || 'text'"
+    [step]="step"
+    [max]="max"
+    [min]="min"
+  />
+  <mat-hint *ngIf="hint">{{ hint }}</mat-hint>
+</mat-form-field>

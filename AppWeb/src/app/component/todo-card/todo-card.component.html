@@ -1,0 +1,30 @@
+<mat-card
+  [ngStyle]="{
+    width: '100%',
+    height: 'auto',
+    margin: '0.5rem 0',
+    color: 'white',
+    'max-width': '500px',
+    'align-self': 'center'
+  }"
+>
+  <mat-card-content>
+    <div
+      [ngStyle]="{
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        'flex-direction': 'row',
+        'justify-content': 'space-between',
+        'align-items': 'center'
+      }"
+    >
+      <div>
+        <mat-checkbox> Simple card </mat-checkbox>
+      </div>
+      <button mat-icon-button>
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>
