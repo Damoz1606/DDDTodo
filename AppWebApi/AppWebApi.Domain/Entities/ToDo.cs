@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace AppWebApi.Domain.Entities
 {
-    public class ToDo: _BaseEntity
+    public class ToDo: _BaseEntity<string>
     {
-        private string _id;
         private string? _title;
         private string _description;
         private string? _author;
@@ -17,8 +16,8 @@ namespace AppWebApi.Domain.Entities
         private DateTime _createDate;
 
         public ToDo(string id, string? title, string description, string? author, bool isDone, DateTime createDate)
+            : base(id)
         {
-            Id = id;
             Title = title;
             Description = description;
             Author = author;
@@ -26,7 +25,6 @@ namespace AppWebApi.Domain.Entities
             CreateDate = createDate;
         }
 
-        public string Id { get => _id; set => _id = value; }
         public DateTime CreateDate { get => _createDate; set => _createDate = value; }
         public bool IsDone { get => _isDone; set => _isDone = value; }
         public string? Author { get => _author; set => _author = value; }

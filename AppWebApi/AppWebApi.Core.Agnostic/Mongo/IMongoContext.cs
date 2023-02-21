@@ -11,8 +11,8 @@ namespace AppWebApi.Core.Agnostic.Mongo
         where TConnection: IMongoConnection
         where TEntity : class
     {
-        IMongoCollection<TEntity> collection { get; protected set; }
-        IMongoDatabase Database { get; protected set; }
+        public IMongoCollection<TEntity> collection { get; }
+        public IMongoDatabase Database { get; }
 
         void CreateConnection(TConnection connection);
     }

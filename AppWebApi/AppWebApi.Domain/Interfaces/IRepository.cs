@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace AppWebApi.Domain.Interfaces
 {
     public interface IRepository<TEntity, TKey>
-        where TEntity : _BaseEntity
+        where TEntity : _BaseEntity<TKey>
         where TKey : class
     {
         Task<List<TEntity>> FindAll();
