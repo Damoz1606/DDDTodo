@@ -1,0 +1,64 @@
+<div
+  [ngStyle]="{
+    width: '100%',
+    height: 'auto',
+    display: 'flex',
+    'flex-direction': 'row',
+    'justify-content': 'space-between',
+    'align-items': 'center'
+  }"
+>
+  <div
+    [ngStyle]="{
+      display: 'flex',
+      height: '100%',
+      'vertical-align': 'middle',
+      'flex-direction': 'row',
+      'justify-content': 'center',
+      'align-items': 'center'
+    }"
+  >
+    <span
+      [ngStyle]="{
+        display: 'flex',
+        'justify-content': 'center',
+        'align-items': 'center',
+        color: 'white',
+        border: '3px solid white',
+        padding: '0.25rem',
+        'border-radius': '100%',
+        'background-color':
+          data.severity === 'info'
+            ? 'cornflowerblue'
+            : data.severity === 'warn'
+            ? 'red'
+            : 'transparent'
+      }"
+    >
+      <mat-icon *ngIf="data.severity === 'info'">info</mat-icon>
+      <mat-icon *ngIf="data.severity === 'warn'">report_problem</mat-icon>
+    </span>
+    <span [ngStyle]="{ margin: '0.25rem' }"></span>
+    <span
+      [ngStyle]="{
+        'font-weight': 'bold',
+        'text-transform': 'uppercase'
+      }"
+    >
+      {{ data.title || "" }}
+    </span>
+    <span [ngStyle]="{ margin: '0.25rem' }"></span>
+    <span>{{ data.message }}</span>
+  </div>
+  <button
+    mat-mini-fab
+    [ngStyle]="{
+      color: 'white',
+      'box-shadow': 'none',
+      background: 'none'
+    }"
+    (click)="snackBarRef.dismissWithAction()"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</div>

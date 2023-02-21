@@ -1,0 +1,23 @@
+<mat-card
+  [ngStyle]="{
+    margin: '0.5rem',
+    width: '100%'
+  }"
+  appearance="outlined"
+>
+  <mat-card-content
+    [ngStyle]="{
+      width: '100%',
+      height: 'auto',
+      display: 'flex',
+      'flex-direction': 'row',
+      'justify-content': 'space-between',
+      'align-items': 'center'
+    }"
+  >
+    <mat-checkbox color="primary">{{ text }}</mat-checkbox>
+    <button mat-icon-button color="primary">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-content>
+</mat-card>

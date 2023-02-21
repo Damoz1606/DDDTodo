@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { MatCardAppearance } from '@angular/material/card';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-todo-card',
@@ -7,5 +6,5 @@ import { MatCardAppearance } from '@angular/material/card';
   styleUrls: ['./todo-card.component.css']
 })
 export class TodoCardComponent {
-
+  @Input() text: string = '';
 }

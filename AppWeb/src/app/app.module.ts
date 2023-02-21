@@ -11,13 +11,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppComponent } from './pages/app/app.component';
 import { DevComponent } from './pages/dev/dev.component';
 import { HomeComponent } from './pages/home/home.component';
-import { TodoCardComponent } from './component/todo-card/todo-card.component';
 import { ButtonComponent } from './component/atoms/button/button.component';
 import { InputTextComponent } from './component/atoms/input-text/input-text.component';
+import { TodoCardComponent } from './component/molecules/todo-card/todo-card.component';
+import { SnackBarComponent } from './component/molecules/snack-bar/snack-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { InputTextComponent } from './component/atoms/input-text/input-text.comp
     DevComponent,
     TodoCardComponent,
     ButtonComponent,
-    InputTextComponent
+    InputTextComponent,
+    SnackBarComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { InputTextComponent } from './component/atoms/input-text/input-text.comp
     MatCardModule,
     MatCheckboxModule,
     MatInputModule,
+    MatSnackBarModule,
     NgbModule
   ],
   providers: [],
