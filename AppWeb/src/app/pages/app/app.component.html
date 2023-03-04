@@ -1,5 +1,10 @@
-<div style="overflow-y: hidden; overflow-x: hidden; height: 100vh; width: 100wh;">
-  <mat-toolbar color="primary">
+<!-- "overflow-y: hidden; overflow-x: hidden; height: 100vh; width: 100wh;" -->
+<div [ngStyle]="{
+
+}">
+  <mat-toolbar color="primary" [ngStyle]="{
+    position: 'fixed'
+  }">
     <span>ToDo DDD App</span>
   </mat-toolbar>
   <div [ngStyle]="{

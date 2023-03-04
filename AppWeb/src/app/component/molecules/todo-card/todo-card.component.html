@@ -1,23 +1,24 @@
-<mat-card
-  [ngStyle]="{
+<mat-card [ngStyle]="{
     margin: '0.5rem',
     width: '100%'
-  }"
-  appearance="outlined"
->
-  <mat-card-content
-    [ngStyle]="{
+  }" appearance="outlined">
+  <mat-card-content [ngStyle]="{
       width: '100%',
       height: 'auto',
       display: 'flex',
       'flex-direction': 'row',
       'justify-content': 'space-between',
       'align-items': 'center'
-    }"
-  >
-    <mat-checkbox color="primary">{{ text }}</mat-checkbox>
-    <button mat-icon-button color="primary">
-      <mat-icon>delete</mat-icon>
-    </button>
+    }">
+    <div *ngIf="isLoading; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </ng-template>
+    <ng-template #elseBlock>
+      <mat-checkbox color="primary" [checked]="value.isDone" (change)="handleChange($event)">{{ text }}</mat-checkbox>
+      <button mat-icon-button color="primary">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </ng-template>
   </mat-card-content>
 </mat-card>

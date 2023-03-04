@@ -1,19 +1,31 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output, forwardRef } from '@angular/core';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, NgModel, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-input-text',
   templateUrl: './input-text.component.html',
-  styleUrls: ['./input-text.component.css']
+  styleUrls: ['./input-text.component.css'],
 })
-export class InputTextComponent {
-  @Input() label?: string = '';
-  @Input() placeholder?: string = '';
-  @Input() value?: string = '';
-  @Input() hint?: string = '';
-  @Input() required?: boolean = false;
-  @Input() type?: 'text' | 'number' | 'email' | 'password' = 'text';
-  @Input() step?: string | number;
-  @Input() max?: string | number;
-  @Input() min?: string | number;
-  @Input() fullWidth?: boolean = false;
+export default class InputTextComponent {
+
+  @Input() name: string = "input"
+  @Input() required: boolean = false;
+  @Input() placeholder: string = "";
+  @Input() label: string = "";
+  @Input() type: 'text' | 'number' | 'email' | 'password' = 'text';
+  @Input() step: string | number = 1;
+  @Input() max: number = Infinity;
+  @Input() min: number = -Infinity;
+  @Input() error: string = "The field is required";
+
+  @Input() value: string = '';
+  @Output() onChange: EventEmitter<any> = new EventEmitter<any>();
+
+
+  inputFormControl = new FormControl('', [Validators.required, Validators.email]);
+
+  handleChange: any = (event: any) => {
+    this.onChange.emit({ name: this.name, value: event });
+  }
+
 }

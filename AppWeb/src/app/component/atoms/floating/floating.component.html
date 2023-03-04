@@ -1,0 +1,15 @@
+<button
+  mat-fab
+  color="primary"
+  [ngStyle]="{
+    position: 'fixed',
+    top: top,
+    bottom: bottom,
+    left: left,
+    right: right,
+    margin: '2rem'
+  }"
+  (click)="handleClick()"
+>
+  <mat-icon>{{ icon }}</mat-icon>
+</button>

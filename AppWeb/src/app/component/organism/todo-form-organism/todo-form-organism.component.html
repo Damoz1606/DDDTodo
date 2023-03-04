@@ -1,0 +1,23 @@
+<mat-card appearance="outlined" [ngStyle]="{
+    width: '100%',
+    maxWidth: '500px',
+    height: '100%'
+  }">
+    <mat-card-header>
+        <mat-card-title>{{ title }}</mat-card-title>
+    </mat-card-header>
+    <form #todoForm="ngForm" (ngSubmit)="handleSubmit()" [ngStyle]="{
+        width: '100%',
+        padding: '2rem'
+      }">
+        <mat-card-content>
+            <app-input-text name="title" (onChange)="handleChange($event)" [value]="todoBody.title || ''" />
+            <app-input-text name="description" (onChange)="handleChange($event)" [value]="todoBody.description"
+                [required]="true" />
+        </mat-card-content>
+        <mat-dialog-actions align="start">
+            <app-button type="button" (onClick)="this.dialogRef.close()" text="Close" />
+            <app-button type="submit" text="Save" />
+        </mat-dialog-actions>
+    </form>
+</mat-card>
