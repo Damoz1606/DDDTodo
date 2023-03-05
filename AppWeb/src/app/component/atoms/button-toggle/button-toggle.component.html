@@ -1,0 +1,19 @@
+<mat-button-toggle [value]="value" [ngStyle]="{
+    display: 'flex',
+    'flex-direction': 'row',
+    'align-items': 'center',
+    'justify-content': 'center'
+    }">
+    <div [ngStyle]="{
+      width: '150px',
+      height: '50px',
+      display: 'flex',
+      'flex-direction': 'row',
+      'align-items': 'center',
+      'justify-content': 'center',
+      'font-weight': 'bold'
+    }">
+        <mat-icon *ngIf="icon">{{icon}}</mat-icon>
+        <h4 [ngStyle]="{ margin: '0 0.25rem 0' }">{{ text }}</h4>
+    </div>
+</mat-button-toggle>

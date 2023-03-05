@@ -1,0 +1,22 @@
+<mat-card appearance="outlined" [ngStyle]="{
+    width: '100%',
+    minWidth: '500px',
+    maxWidth: '1000px'
+  }">
+    <mat-card-header [ngStyle]="{
+        display: 'flex',
+        'flex-direction': 'row',
+        'justify-content': 'space-between',
+        marginBottom: '1rem'
+    }">
+        <mat-card-title>{{ body?.title }}</mat-card-title>
+        <mat-icon>assignment</mat-icon>
+    </mat-card-header>
+    <mat-card-content>
+        <app-input-text-area [ngStyle]="{
+        }" [disabled]="true" [value]="body?.description || ''" />
+    </mat-card-content>
+    <mat-dialog-actions align="start">
+        <app-button type="button" (onClick)="this.dialogRef.close()" text="Close" />
+    </mat-dialog-actions>
+</mat-card>

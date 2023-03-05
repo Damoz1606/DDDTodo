@@ -1,0 +1,26 @@
+<mat-form-field
+  appearance="outline"
+  [ngStyle]="{
+    width: '100%'
+  }"
+>
+  <mat-label *ngIf="!!label">{{ label }}</mat-label>
+  <textarea
+  rows="15"
+    matInput
+    #input="ngModel"
+    [(ngModel)]="value"
+    (ngModelChange)="handleChange($event)"
+    [name]="name"
+    [placeholder]="placeholder"
+    [required]="required"
+    [disabled]="disabled"
+  ></textarea>
+  <mat-error
+    *ngIf="input.errors?.['required']"
+    [ngStyle]="{
+      color: 'red'
+    }"
+    >{{ error }}</mat-error
+  >
+</mat-form-field>
