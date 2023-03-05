@@ -1,0 +1,43 @@
+version: '3.7'
+
+networks:
+  dafult:
+    name: todo-net
+
+services:
+  todo-ui:
+    build: 
+      context: ./AppWeb
+    container_name: todo-ui
+    hostname: todo
+    depends_on:
+      - todo-service
+    ports:
+      - 14000:80
+    environment:
+      - API_URL=http://localhost:15000/api/todos
+      # There was a problem using the service as the address
+      # API_URL=http://todo-service/api/todos
+      # as a simple solution was setted the localhost
+
+  todo-service:
+    build:
+      context: ./AppWebApi
+    container_name: todo-service
+    hostname: todo-service
+    depends_on:
+      - mongo
+    ports:
+      - 15000:80
+    environment:
+      ConnectionString__MongoStore: mongodb://todos:12345@mongo:27017/todo?authSource=admin
+  
+
+  mongo:
+    image: mongo:6.0.4-jammy
+    container_name: mongo-todo
+    hostname: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: todos
+      MONGO_INITDB_ROOT_PASSWORD: 12345
+  

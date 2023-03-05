@@ -15,11 +15,11 @@ export class TodoService {
 
   getTodos()
   {
-    return this.http.get<RSToDo[]>(`${environment.apiURL}/`);
+    return this.http.get<RSToDo[]>(`${environment.apiURL}`);
   }
 
   postTodo(todo: RQToDo) {
-    return this.http.post<string>(environment.apiURL, todo);
+    return this.http.post<string>(`${environment.apiURL}`, todo);
   }
 
   putTodoState(id: string, todo: RQIsDone) {
