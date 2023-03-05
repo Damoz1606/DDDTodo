@@ -1,0 +1,17 @@
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\AppWebApi.Core.Agnostic.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\AppWebApi.Core.Agnostic.deps.json
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\AppWebApi.Core.Agnostic.pdb
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\AWSSDK.Core.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\AWSSDK.SecurityToken.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\DnsClient.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\MongoDB.Bson.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\MongoDB.Driver.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\MongoDB.Driver.Core.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\MongoDB.Libmongocrypt.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\SharpCompress.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\Snappier.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\ZstdSharp.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\runtimes\linux\native\libmongocrypt.so
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Core.Agnostic\bin\Release\net6.0\publish\runtimes\win\native\mongocrypt.dll

@@ -1,0 +1,3 @@
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\bin\Release\net6.0\publish\AppWebApi.Domain.dll
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\bin\Release\net6.0\publish\AppWebApi.Domain.deps.json
+C:\Users\panch\Documents\Projects\DotNet\DDDToDo\AppWebApi\AppWebApi.Domain\bin\Release\net6.0\publish\AppWebApi.Domain.pdb
