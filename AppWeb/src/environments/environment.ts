@@ -1,4 +1,5 @@
 export const environment = {
-    production: true,
-    apiURL: 'https://localhost:7286/api/todos'
+    production: false,
+    apiURL: window.env.apiURL || "default"
+    // apiURL: window["env"]['apiURL'] || 'http://example.com'
 };
