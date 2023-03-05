@@ -20,8 +20,8 @@
       }">To Do app</h1>
       <mat-button-toggle-group value="1" #todoSelection="matButtonToggleGroup">
         <app-button-toggle value="1" icon="assignment" text="Todos" />
-        <app-button-toggle value="2" icon="assignment_turned_in" text="Completos" />
-        <app-button-toggle value="3" icon="assignment_late" text="Por hacer" />
+        <app-button-toggle value="2" icon="assignment_turned_in" text="Complete" />
+        <app-button-toggle value="3" icon="assignment_late" text="Uncomplete" />
       </mat-button-toggle-group>
 
       <div [ngSwitch]="todoSelection.value" [ngStyle]="{
