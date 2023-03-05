@@ -11,8 +11,8 @@
         padding: '2rem'
       }">
         <mat-card-content>
-            <app-input-text name="title" (onChange)="handleChange($event)" [value]="todoBody.title || ''" />
-            <app-input-text name="description" (onChange)="handleChange($event)" [value]="todoBody.description"
+            <app-input-text name="title" label="Title" (onChange)="handleChange($event)" [value]="todoBody.title || ''" />
+            <app-input-text-area name="description" label="Description" (onChange)="handleChange($event)" [value]="todoBody.description"
                 [required]="true" />
         </mat-card-content>
         <mat-dialog-actions align="start">

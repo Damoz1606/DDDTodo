@@ -28,7 +28,6 @@ export class TodoFormOrganismComponent {
     }
   }
 
-
   onNoClick() {
     this.dialogRef.close();
   }

@@ -44,12 +44,14 @@ public class ToDoController: ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult> Create(RQToDo body)
+    public async Task<ActionResult<String>> Create(RQToDo body)
     {
         try
         {
             await this._service.Create(body);
-            return StatusCode(StatusCodes.Status201Created);
+            var todos = await this._service.FindAll();
+            String? id = todos[todos.Count - 1].Id;
+            return StatusCode(StatusCodes.Status201Created, id);
         }
         catch (Exception e)
         {
@@ -64,6 +66,21 @@ public class ToDoController: ControllerBase
         {
             await this._service.Update(id, body);
             return StatusCode(StatusCodes.Status200OK);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError);
+        }
+    }
+
+    [HttpPut, Route("status/{id}")]
+    public async Task<ActionResult> UpdateStatus(string id, RQTodoStatus body)
+    {
+        try
+        {
+            await this._service.UpdateStatus(id, body);
+            return StatusCode(StatusCodes.Status200OK);
+         
         }
         catch (Exception e)
         {

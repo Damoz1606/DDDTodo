@@ -1,4 +1,4 @@
 export interface RQIsDone {
-    _id: string;
+    id: string;
     isDone: boolean;
 }

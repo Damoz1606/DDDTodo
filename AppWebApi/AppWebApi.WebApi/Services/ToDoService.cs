@@ -38,6 +38,16 @@ public class ToDoService
         await this._repository.Update(id, todo);
     }
 
+    public async Task UpdateStatus(string id, RQTodoStatus body)
+    {
+        var todo = await this._repository.Find(id);
+        if(todo != null)
+        {
+            todo.IsDone = body.IsDone;
+            await this._repository.Update(id, todo);
+        }
+    }
+
     public async Task Delete(string id)
     {
         await this._repository.Delete(id);

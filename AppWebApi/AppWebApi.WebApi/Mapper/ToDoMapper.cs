@@ -11,6 +11,7 @@ public static class ToDoMapper
         rs.Id = todo.Id;
         rs.Description = todo.Description;
         rs.Title = todo.Title;
+        rs.IsDone = todo.IsDone;
         return rs;
     }
 

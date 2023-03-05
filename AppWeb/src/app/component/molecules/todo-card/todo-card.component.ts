@@ -10,11 +10,12 @@ import { RSToDo } from 'src/services/DTOs/RSToDo';
   styleUrls: ['./todo-card.component.css']
 })
 export class TodoCardComponent {
-  @Input() value: RSToDo = { _id: '', description: '', isDone: false };
+  @Input() value: RSToDo = { id: '', description: '', isDone: false };
   @Input() isLoading: boolean = false;
 
   @Output() onStateChange: EventEmitter<RQIsDone> = new EventEmitter<RQIsDone>();
-  @Output() onDelete: EventEmitter<RQDelete> = new EventEmitter<RQDelete>();
+  @Output() onDelete: EventEmitter<string> = new EventEmitter<string>();
+  @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
 
   text: string = '';
 
@@ -24,9 +25,17 @@ export class TodoCardComponent {
 
   handleChange(event: any) {
     this.onStateChange.emit({
-      _id: this.value._id,
+      id: this.value.id,
       isDone: event.checked
     })
+  }
+
+  handleDelete() {
+    this.onDelete.emit(this.value.id);
+  }
+
+  handleClick() {
+    this.onClick.emit(this.value);
   }
 
 }

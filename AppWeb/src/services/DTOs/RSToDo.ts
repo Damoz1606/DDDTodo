@@ -1,5 +1,5 @@
 export interface RSToDo {
-    _id: string;
+    id: string;
     title?: string;
     description: string;
     isDone: boolean;

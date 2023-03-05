@@ -3,20 +3,33 @@
     width: '100%'
   }" appearance="outlined">
   <mat-card-content [ngStyle]="{
-      width: '100%',
-      height: 'auto',
-      display: 'flex',
-      'flex-direction': 'row',
-      'justify-content': 'space-between',
-      'align-items': 'center'
-    }">
+    padding: '0 1rem',
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    'flex-direction': 'row',
+    'justify-content': 'space-between',
+    'align-items': 'center'
+  }">
     <div *ngIf="isLoading; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
       <mat-progress-bar mode="indeterminate"></mat-progress-bar>
     </ng-template>
     <ng-template #elseBlock>
-      <mat-checkbox color="primary" [checked]="value.isDone" (change)="handleChange($event)">{{ text }}</mat-checkbox>
-      <button mat-icon-button color="primary">
+      <mat-checkbox color="primary" [checked]="value.isDone" (change)="handleChange($event)"></mat-checkbox>
+      <div matRipple [ngStyle]="{
+          width: '100%',
+          height: '75px',
+          display: 'flex',
+          'justify-content': 'space-between',
+          'align-items': 'center',
+          cursor: 'pointer'
+        }"
+        (click)="handleClick()">
+        {{ value.title ||
+        value.description.substring(0, 25) + "..."}}
+      </div>
+      <button mat-icon-button color="primary" (click)="handleDelete()">
         <mat-icon>delete</mat-icon>
       </button>
     </ng-template>

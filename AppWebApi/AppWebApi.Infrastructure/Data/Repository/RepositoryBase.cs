@@ -16,11 +16,6 @@ namespace AppWebApi.Infrastructure.Data.Repository
             this._collection = context.collection;
         }
 
-        public async Task Create(TEntity body)
-        {
-            await this._collection.InsertOneAsync(body);
-        }
-
         public async Task Delete(TKey key)
         {
             await this._collection.FindOneAndDeleteAsync(x => x.Id == key);
@@ -39,6 +34,11 @@ namespace AppWebApi.Infrastructure.Data.Repository
         public async Task Update(TKey key, TEntity body)
         {
             await this._collection.FindOneAndReplaceAsync(x => x.Id == key, body);
+        }
+
+        public async Task Create(TEntity body)
+        {
+            await this._collection.InsertOneAsync(body);
         }
     }
 }
